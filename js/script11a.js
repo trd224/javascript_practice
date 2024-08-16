@@ -100,5 +100,18 @@ patrons.forEach(patron => {
 
 console.log(result);
 
+//------------------------------------------
+
+// function listBorrowedBooks(patrons, books){
+//   return patrons.map(p => ({
+//       id: p.id,
+//       name: p.name,
+//       borrowedBooks: books.filter(b => b.borrowedBy == p.id).map(t => t.title)
+//   }))
+// }
+
+// const result = listBorrowedBooks(patrons, books);
+// console.log(result);
+
   
   

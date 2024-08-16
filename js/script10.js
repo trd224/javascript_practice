@@ -43,29 +43,26 @@ const students = [
   
   const result = {
     averageGrade: 0,
-    highestGrade: Infinity,
+    highestGrade: 0,
     studentWithHighestAverage: {},
     averageAge: 0
-  }
+  };
   
   
   students.forEach(student => {
     student['avgGrade'] = 0;
-    let highestGrade = 0;
     student.grades.forEach(grade => {
-      student['avgGrade'] += grade / student.grades.length;
-  
-      if(grade > highestGrade){
-        highestGrade = grade;
-      }
+        student['avgGrade'] += grade / student.grades.length;
+        if(grade > result.highestGrade){
+            result.highestGrade = grade;
+        }
     })
-  
-    result.averageGrade += student.avgGrade / students.length;
-    result.highestGrade = highestGrade;
-  
-    result.studentWithHighestAverage = students.find(student => student.grades.includes(result.highestGrade))
+
+    result.studentWithHighestAverage = students.find(student => student.grades.includes(result.highestGrade));
+
     result.averageAge += student.age / students.length;
-   
+
+    result.averageGrade += student.avgGrade / students.length;
   })
   
   

@@ -1,8 +1,8 @@
 // Filtering Methods
 // Array.prototype.filter(): Creates a new array with all elements that pass the test implemented by the provided function.
 // Array.prototype.find(): Returns the value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned.
-// Array.prototype.findIndex(): Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, -1 is returned.
 // Array.prototype.findLast(): Returns the value of the last element in the array that satisfies the provided testing function. Otherwise, undefined is returned.
+// Array.prototype.findIndex(): Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, -1 is returned.
 // Array.prototype.findLastIndex(): Returns the index of the last element in the array that satisfies the provided testing function. Otherwise, -1 is returned.
 // Array.prototype.some(): Tests whether at least one element in the array passes the test implemented by the provided function. Returns true or false.
 // Array.prototype.every(): Tests whether all elements in the array pass the test implemented by the provided function. Returns true or false.
@@ -117,6 +117,15 @@
 // })
 
 // console.log(result); // output: 4
+
+// or
+
+// const array = [1,2,3,4,5];
+// const targetNum = 6;
+
+// const result = array.find(num => num > targetNum) || null;
+
+// console.log(result); // output: null
 
 //-------------------------------------------------
 // 6. Array Flattening

@@ -35,24 +35,36 @@
     { id: 5, category: 'vegetables', name: 'Broccoli' }
   ];
 
+
+
   const result = {};
 
   data.forEach(item => {
-    //console.log(item)
-    for(key in item){
-      //console.log(key)
-      if(key == 'category'){
-        console.log(item[key]);
-        let value = item[key];
-        if(!result[value]){
-          result[value] = [];
-        }
-        result[value].push(item);
-        
-        
-      }
+    console.log(item);
+    if(!result[item.category]){
+        result[item.category] = [];
     }
+    result[item.category].push(item);
   })
+
+  console.log(result);
+
+  // data.forEach(item => {
+  //   //console.log(item)
+  //   for(key in item){
+  //     //console.log(key)
+  //     if(key == 'category'){
+  //       console.log(item[key]);
+  //       let value = item[key];
+  //       if(!result[value]){
+  //         result[value] = [];
+  //       }
+  //       result[value].push(item);
+        
+        
+  //     }
+  //   }
+  // })
 
   console.log(result);
 

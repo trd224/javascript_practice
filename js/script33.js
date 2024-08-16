@@ -11,6 +11,6 @@ function decodeMessage(encoded) {
 }
 
 // Test cases
-console.log(decodeMessage("a2b3c1")); // "aabbbcc"
+console.log(decodeMessage("a2b10c1")); // "aabbbcc"
 console.log(decodeMessage("x5y2z3")); // "xxxxxyyzzz"
 console.log(decodeMessage("p1q4r2")); // "pqqqqrr"

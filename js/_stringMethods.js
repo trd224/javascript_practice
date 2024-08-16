@@ -39,7 +39,7 @@ str.valueOf()
 
 // charAt(index): Returns the character at the specified index.
 // charAt()
-console.log("charAt():", str.charAt(0)); // Output: " "
+console.log("charAt():", str.charAt(0)); // Output: "H"
 
 // charCodeAt(index): Returns the Unicode value of the character at the specified index.
 // charCodeAt()
