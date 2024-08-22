@@ -1,5 +1,6 @@
-Question:
-Write a function deepClone that creates a deep copy of an object. The copy should not reference any of the nested objects in the original object.
+// Question:
+// Write a function deepClone that creates a deep copy of an object. The copy should not reference any 
+// of the nested objects in the original object.
 const obj = {
   a: 1,
   b: { c: 2, d: { e: 3 } }

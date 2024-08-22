@@ -1,5 +1,6 @@
-Question:
-Write a function flattenObject that takes a deeply nested object and returns a flattened version of it, with the keys indicating the path to each value.
+// Question:
+// Write a function flattenObject that takes a deeply nested object and returns a flattened version 
+// of it, with the keys indicating the path to each value.
 const obj = {
   a: 1,
   b: {

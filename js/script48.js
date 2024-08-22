@@ -1,5 +1,5 @@
-Question:
-Write a function rotateMatrix that takes a 2D array (matrix) and rotates it 90 degrees clockwise.
+// Question:
+// Write a function rotateMatrix that takes a 2D array (matrix) and rotates it 90 degrees clockwise.
 
 const matrix = [
   [1, 2, 3],

@@ -9,19 +9,27 @@ const intervals = [
 ];
 
 function mergeIntervals(intervals){
-    intervals.sort((a,b) => a[0] - b[0]);
-
-    for(let i = 0; i < intervals.length - 1; i++){
-      const ar = [];
-      if(intervals[i][1] > intervals[i+1][0]){
-        ar.push(intervals[i][0]);
-        ar.push(intervals[i+1][1]);
-        
-      }
-      r.push(intervals[i + 1]);
+  
+   if(intervals.length < 1){
+      return []; 
+   }
+   intervals.sort((a,b) => a[0] - b[0]);
+   const rs = [];
+   const r = [];
+   for(let i = 0; i < intervals.length - 1; i++){
+    if(intervals[i][1] > intervals[i+1][0]){
+      r.push(intervals[i][0]);
+      r.push(intervals[i+1][1])
+      rs.push(r)
     }
-    
-    return r;
+    else{
+      rs.push(intervals[i+1])
+     }
+   }
+   
+   
+   console.log(rs);
+   
 }
 
 const result = mergeIntervals(intervals);
